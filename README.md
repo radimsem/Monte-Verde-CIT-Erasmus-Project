@@ -20,11 +20,14 @@ Madeira island.
 
 ## Division of the project:
 - Lukáš Hampl:
-  + Section A
+  + Gallery Design
+  + Location Design
 - Jonáš Javůrek:
-  + Section A
+  + Services Section Design
+  + Footer Design
 - Zdeněk Michalec:
-  + Section A
+  + Testimonials Section Design
+  + Responsive Design
 - Radim Semerák:
   + Landing Page Design
   + Contact/Booking Section Design
