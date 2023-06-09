@@ -1,0 +1,169 @@
+.showcase {
+  background-image: url(header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+  background-color: #000;
+}
+
+.header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: var(--transition-short);
+}
+
+.header_top:hover {
+  background-color: var(--black);
+}
+
+.logo img {
+  width: 250px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+nav ul li a {
+  position: relative;
+  padding-block: 1em;
+  color: var(--white);
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: var(--white);
+  transition: var(--transition-short);
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  padding: 4em 10%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
+
+.hero_sec {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  padding-block: 0;
+  transform: translateY(-50%);
+}
+
+.hero_titles h1 {
+  font-size: 3.25em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.hero_titles p {
+  margin-bottom: 20px;
+  color: var(--smoke);
+}
+
+.primar_btn {
+  display: flex;
+}
+
+.primar_btn a {
+  font-size: 1.15em;
+  padding: 1em 1.5em;
+  color: var(--white);
+  border: 2px solid var(--pink);
+  border-radius: 50px;
+  transition: var(--transition-short);
+}
+
+.primar_btn a:hover {
+  background-color: var(--pink);
+}
+
+.hero_gall article {
+  margin: 5px;
+  padding: 0;
+}
+
+.hero_row {
+  display: flex;
+}
+
+.landscape_img img {
+  height: 250px;
+}
+
+.rect_img img {
+  height: 150px;
+}
+
+.scroll-down {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  bottom: 0;
+}
+
+.scroll-down #scroll_btn {
+  display: inline-block;
+  position: relative;
+  width: 1px;
+  height: 60px;
+  background-color: var(--pink);
+}
+
+.scroll-down #scroll_btn:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  left: -0.4em;
+  border-radius: 50%;
+  background-color: var(--pink);
+  animation: move-down 2.5s alternate infinite;
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+      transform: translateY(35px);
+  }
+}
