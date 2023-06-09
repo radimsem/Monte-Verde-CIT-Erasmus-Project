@@ -24,6 +24,12 @@
   --pink: #ff7676;
   --smoke: #f5f4f3;
   --white: #fff;
+  --available: #b8e8d0;
+  --available-hover: #a9d6bf;
+  --selected-between: #eeffe6;
+  --select: #ddffcc;
+  --booked: #ffc0bd;
+  --changeover: #fee2a0;
   --transition-short: .35s;
   --transition-long: .65s;
 }
@@ -55,4 +61,72 @@ img {
 
 .relative {
   position: relative;
+}
+
+.bg_image {
+  background-image: url(header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section {
+  position: relative;
+  display: flex;
+  padding: 4em 10%;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
+
+.primar_btn {
+  display: flex;
+}
+
+.primar_btn a {
+  font-size: 1.15em;
+  padding: 1em 1.5em;
+  color: var(--white);
+  border: 2px solid var(--pink);
+  border-radius: 50px;
+  transition: var(--transition-short);
+}
+
+.primar_btn a:hover {
+  background-color: var(--pink);
+}
+
+.section_head h1 {
+  position: relative;
+  font-size: 2.25em;
+  font-weight: 600;
+  padding-bottom: 0.75em;
+  margin-bottom: 1em;
+}
+
+.section_head h1:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--pink);
 }
