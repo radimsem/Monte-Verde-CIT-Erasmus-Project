@@ -83,57 +83,17 @@
           <h1>Appointment booking</h1>
         </article>
         <section class="booking_sec p-0">
-          <article class="calendar_art">
-            <div class="calendar_header">
-              <p class="current_date"></p>
-              <div class="icons">
-                <i data-icon="previous" class="fa-solid fa-angle-left"></i>
-                <i data-icon="next" class="fa-solid fa-angle-right"></i>
-              </div>
-            </div>
-        
-            <div class="calendar">
-              <ul class="weeks">
-                <li>Sun</li>
-                <li>Mon</li>
-                <li>Tue</li>
-                <li>Wed</li>
-                <li>Thu</li>
-                <li>Fri</li>
-                <li>Sat</li>
-              </ul>
-              <ul class="days">
-              </ul>
-            </div>
-          </article>
           <article class="booking_form_art">
-            <div class="calendar_colors_info">
-              <div class="color_info_row">
-                <div id="available" class="defined_color"></div>
-                <p>Available</p>
-              </div>
-              <div class="color_info_row">
-                <div id="booked" class="defined_color"></div>
-                <p>Booked</p>
-              </div>
-              <div class="color_info_row">
-                <div id="changeover" class="defined_color"></div>
-                <p>Changeover</p>
-              </div>
-            </div>
         
             <form class="booking_form" action="" method="POST">
               <input type="text" name="name" id="name" placeholder="Your full name" class="data_input" required>
               <input type="email" name="email" id="email" placeholder="Your @email" class="data_input" required>
               <input type="text" name="phone" id="phone" placeholder="Your phone number" class="data_input" required>
               <input type="text" name="date" id="date" placeholder="Select a date in the calendar" class="data_input" required>
-              <div class="checkbox_row">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox">I agree to the processing of <a href="#booking">personal data</a></label>
-              </div>
               <input type="submit" name="submit" id="submit" value="Contact Host" class="data_input">
               <input type="hidden" name="action" id="action" value="Contact Host">
             </form>
+
           </article>
         </section>
       </section>
