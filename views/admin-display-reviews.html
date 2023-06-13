@@ -8,11 +8,11 @@
   <script src="https://kit.fontawesome.com/250fd47c9a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/public/css/global.css">
   <link rel="stylesheet" href="/public/admin/css/admin.css">
-  <title>Homepage - Admin Monte Verde in Funchal</title>
+  <title>Display reviews - Admin Monte Verde in Funchal</title>
 </head>
 
 <body>
-  <div class="showcase">
+  <div class="pagecase">
 
     <aside class="navigation_aside">
       <div class="aside_top">
@@ -26,9 +26,9 @@
           <h3>Menu</h3>
           <nav>
             <ul>
-              <li class="actual"><a href="admin-index.html"><i class="fa-solid fa-gauge-high"></i> <span>Home</span></a></li>
+              <li><a href="admin-index.html"><i class="fa-solid fa-gauge-high"></i> <span>Home</span></a></li>
               <li><a href="admin-display-reservations.html"><i class="fa-solid fa-calendar-days"></i> <span>Reservations</span></a></li>
-              <li class="articles_link">
+              <li class="articles_link actual">
                 <a href="#">
                   <i class="fa-solid fa-newspaper"></i>
                   <span>Reviews</span> 
@@ -72,7 +72,8 @@
 
       <header>
         <div class="welcome">
-          <h1>Welcome { Owner Name } 🎉</h1>
+          <h1>Display</h1>
+          <p>reviews</p>
         </div>
 
         <div class="website_direction_btn">
@@ -82,40 +83,25 @@
 
       <main>
         <section class="edit_page_sec table_edit_sec">
-          <article id="villa_agave" class="edit_table_art">
-            <h2>Interested in Monte Verde</h2>
+          <article class="edit_table_art">
+            <h2>Reviews Monte Verde</h2>
             <table class="arts_table">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                  <th>Date from</th>
-                  <th>Date to</th>
-                  <th>Confirm</th>
+                  <th>ID</th>
+                  <th>Review author</th>
+                  <th>Date added</th>
+                  <th>Edit</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="client_name">John Doe</td>
-                  <td class="client_email">john.doe@gmail.com</td>
-                  <td class="client_phone">+351 927 963 571</td>
-                  <td class="date_from">20.6. 2023</td>
-                  <td class="date_to">28.6. 2023</td>
+                  <td class="id">1</td>
+                  <td class="client_name">Kelly Myer</td>
+                  <td class="date">6.7. 2023</td>
                   <td class="action">
-                    <a class="add highlight" href="#"><i class="fa-solid fa-check"></i></a>
-                    <a class="delete" href="#"><i class="fa-solid fa-x"></i></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="client_name">Mafalda Moura</td>
-                  <td class="client_email">mmoura@gmail.com</td>
-                  <td class="client_phone">+351 913 985 516</td>
-                  <td class="date_from">19.6. 2023</td>
-                  <td class="date_to">25.6. 2023</td>
-                  <td class="action">
-                    <a class="add highlight" href="#"><i class="fa-solid fa-check"></i></a>
-                    <a class="delete" href="#"><i class="fa-solid fa-x"></i></a>
+                    <a class="edit highlight" href="admin-edit-review.html"><i class="fa-solid fa-pen"></i></a>
+                    <a class="delete" href="#"><i class="fa-solid fa-trash-can"></i></a>
                   </td>
                 </tr>
               </tbody>
@@ -130,7 +116,7 @@
     <div class="delete_overlay"></div>
 
     <div class="delete_popup">
-      <h2>Do you want to delete a client reservation: <span></span>?</h2>
+      <h2>Do you want to delete a client review: <span></span>?</h2>
       <div class="delete_decision">
         <button id="yes" class="delete_btn_yes">Yes</button>
         <button id="no" class="delete_btn_no">No</button>

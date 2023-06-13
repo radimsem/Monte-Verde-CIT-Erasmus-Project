@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/250fd47c9a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/public/css/global.css">
+  <link rel="stylesheet" href="/public/admin/css/admin.css">
+  <title>Edit reservation - Admin Monte Verde in Funchal</title>
+</head>
+
+<body>
+  <div class="pagecase">
+
+    <aside class="navigation_aside">
+      <div class="aside_top">
+        <div class="logo">
+          <a href="admin-index.html">
+            <img src="/public/admin/img/Semerak Dashboard Logo.png" alt="">
+          </a>
+        </div>
+  
+        <div class="navigation">
+          <h3>Menu</h3>
+          <nav>
+            <ul>
+              <li><a href="admin-index.html"><i class="fa-solid fa-gauge-high"></i> <span>Home</span></a></li>
+              <li class="actual"><a href="admin-display-reservations.html"><i class="fa-solid fa-calendar-days"></i> <span>Reservations</span></a></li>
+              <li class="articles_link">
+                <a href="#">
+                  <i class="fa-solid fa-newspaper"></i>
+                  <span>Reviews</span> 
+                  <i class="fa-solid fa-angle-down pull_right"></i>
+                </a>
+              </li>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="admin-add-review.html"><i class="fa-solid fa-plus"></i> <span>Add review</span></a></li>
+                  <li><a href="admin-display-reviews.html"><i class="fa-solid fa-eye"></i> <span>Display reviews</span></a></li>
+                </ul>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="account">
+        <h3>Profile</h3>
+
+        <div class="profile_group">
+          <i class="fa-solid fa-user"></i>
+          <div class="profile_info">
+            <h2>{ Owner Name }</h2>
+            <p>Administrator</p>
+          </div>
+        </div>
+
+        <div class="log_out_btn">
+          <a href="admin-login.html"><i class="fa-solid fa-right-from-bracket pull_left"></i> <span>Log out</span></a>
+        </div>
+      </div>
+
+      <button class="close_btn" aria-label="Zavírací tlačítko pro navigaci">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+    </aside>
+    
+    <div class="dashboard">
+
+      <header>
+        <div class="welcome">
+          <h1>Edit</h1>
+          <p>reservation</p>
+        </div>
+
+        <div class="website_direction_btn">
+          <a href="index.html" target="_blank">See website</a>
+        </div>
+      </header>
+
+      <main>
+        <section id="form_sec" class="edit_page_sec">
+          <article class="edit_form_art">
+            
+            <form action="" method="post" class="edit_form">
+              <div class="form_group">
+                <label for="client_name">Client name</label>
+                <input type="text" value="Kelly Myer" name="client_name" id="client_name" placeholder="Write client's name" required>
+              </div>
+              <div class="form_group">
+                <label for="client_email">Email</label>
+                <input type="text" value="kelly.myer@gmail.com" name="client_email" id="client_email" placeholder="Write client's @email" required>
+              </div>
+              <div class="form_group">
+                <label for="client_phone">Phone</label>
+                <input type="text" value="+351 927 963 571" name="client_phone" id="client_phone" placeholder="Write client's phone number" required>
+              </div>
+              <div class="form_group">
+                <label for="date_from">Date from</label>
+                <input type="date" value="2023-06-20" name="date_from" id="date_from" required>
+              </div>
+              <div class="form_group">
+                <label for="date_to">Date to</label>
+                <input type="date" value="2023-06-28" name="date_to" id="date_to" required>
+              </div>
+              <input type="submit" id="submit" value="Update reservation in the calendar">
+              <input type="hidden" name="action" id="action" value="update_reservation">
+            </form>
+
+          </article>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="/public/admin/js/admin.js"></script>
+
+</body>
+
+</html>
