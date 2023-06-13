@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/250fd47c9a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/public/css/global.css">
+  <link rel="stylesheet" href="/public/admin/css/admin.css">
+  <title>Edit review - Admin Monte Verde in Funchal</title>
+</head>
+
+<body>
+  <div class="pagecase">
+
+    <aside class="navigation_aside">
+      <div class="aside_top">
+        <div class="logo">
+          <a href="admin-index.html">
+            <img src="/public/admin/img/Semerak Dashboard Logo.png" alt="">
+          </a>
+        </div>
+  
+        <div class="navigation">
+          <h3>Menu</h3>
+          <nav>
+            <ul>
+              <li><a href="admin-index.html"><i class="fa-solid fa-gauge-high"></i> <span>Home</span></a></li>
+              <li><a href="admin-display-reservations.html"><i class="fa-solid fa-calendar-days"></i> <span>Reservations</span></a></li>
+              <li class="articles_link actual">
+                <a href="#">
+                  <i class="fa-solid fa-newspaper"></i>
+                  <span>Reviews</span> 
+                  <i class="fa-solid fa-angle-down pull_right"></i>
+                </a>
+              </li>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="admin-add-review.html"><i class="fa-solid fa-plus"></i> <span>Add review</span></a></li>
+                  <li><a href="admin-display-reviews.html"><i class="fa-solid fa-eye"></i> <span>Display reviews</span></a></li>
+                </ul>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="account">
+        <h3>Profile</h3>
+
+        <div class="profile_group">
+          <i class="fa-solid fa-user"></i>
+          <div class="profile_info">
+            <h2>{ Owner Name }</h2>
+            <p>Administrator</p>
+          </div>
+        </div>
+
+        <div class="log_out_btn">
+          <a href="admin-login.html"><i class="fa-solid fa-right-from-bracket pull_left"></i> <span>Log out</span></a>
+        </div>
+      </div>
+
+      <button class="close_btn" aria-label="Zavírací tlačítko pro navigaci">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+    </aside>
+    
+    <div class="dashboard">
+
+      <header>
+        <div class="welcome">
+          <h1>Edit</h1>
+          <p>review</p>
+        </div>
+
+        <div class="website_direction_btn">
+          <a href="index.html" target="_blank">See website</a>
+        </div>
+      </header>
+
+      <main>
+        <section id="form_sec" class="edit_page_sec">
+          <article class="edit_form_art">
+            
+            <form action="/admin/reviews" method="post" class="edit_form" enctype="multipart/form-data">
+              <div class="form_group">
+                <label for="review_title">Review title</label>
+                <input
+                  type="text"
+                  value="Beautiful View"
+                  name="review_title"
+                  id="review_title"
+                  placeholder="Write heading for the review"
+                  required
+                />
+              </div>
+              <div class="form_group">
+                <label for="review_content">Review content</label>
+                <textarea name="review_content" id="review_content" cols="30" rows="10" placeholder="Write content of the review" required>
+My husband, 2 teenagers, and I had a wonderful stay with beautiful views, games, and all the comforters of home. Definitely recommend!</textarea
+                >
+              </div>
+              <div class="form_group">
+                <label for="author">Author name</label>
+                <input
+                  type="text"
+                  value="Kelly Myer"
+                  name="author"
+                  id="author"
+                  placeholder="Write the full name of the author of the review"
+                  required
+                />
+              </div>
+              <div class="form_group">
+                <label for="score">Assessment</label>
+                <select name="score" id="score">
+                  <option value="0">-</option>
+                  <option value="1">5 - Excellent</option>
+                  <option value="2">4 - Good</option>
+                  <option value="3">3 - Okay</option>
+                  <option value="4">2 - Poor</option>
+                  <option value="5">1 - Terrible</option>
+                </select>
+              </div>
+              <div class="form_group">
+                <label for="stay_info">Stay info</label>
+                <input
+                  type="text"
+                  value="Stayed 3 nights in Apr 2023"
+                  name="stay_info"
+                  id="stay_info"
+                  placeholder="Write information about client's stay in the reservation (number of days + period)"
+                  required
+                />
+              </div>
+              <input type="submit" id="submit" value="Update review on the website" />
+              <input type="hidden" name="action" id="action" value="update_review" />
+              <input type="hidden" name="id" value="<%= review.id %>" />
+            </form>
+
+          </article>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="/public/admin/js/admin.js"></script>
+
+</body>
+
+</html>

@@ -143,125 +143,14 @@ nav ul li a:hover:before {
   color: var(--white);
 }
 
-.calendar_art,
-.booking_form {
-  border-radius: 20px;
-  background-color: var(--white);
+.booking_sec {
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2.5em;
 }
 
-.calendar_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 30px 10px;
-}
-
-.calendar_header p.current_date {
-  font-size: 1.45em;
-  font-weight: 500;
-}
-
-.calendar_header .icons {
-  display: flex;
-  margin-right: -10px;
-  gap: 10px;
-}
-
-.calendar_header .icons i {
-  cursor: pointer;
-  font-size: 1.25em;
-  text-align: center;
-  width: 38px;
-  height: 38px;
-  line-height: 38px;
-  color: #878787;
-  border-radius: 50%;
-  transition: 350ms;
-}
-
-.calendar_header .icons i:hover {
-  background-color: #f2f2f2;
-}
-
-.calendar {
-  padding: 20px;
-}
-
-.calendar ul {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  list-style: none;
-}
-
-.calendar ul.days {
-  margin-bottom: 20px;
-}
-
-.calendar ul.weeks li {
-  font-weight: 500;
-  color: var(--dark);
-}
-
-.calendar ul.days li {
-  cursor: pointer;
-  margin-top: 40px;
-  z-index: 1;
-}
-
-.calendar ul.days li.inactive:before {
-  background-color: #f2f2f2;
-}
-
-.calendar ul.days li.inactive:hover:before {
-  background-color: #f2f2f2;
-}
-
-.calendar ul.days li.selected:before {
-  background-color: var(--select);
-}
-
-.calendar ul.days li.selected:hover:before {
-  background-color: var(--select);
-}
-
-.calendar ul li {
-  position: relative;
-  width: calc(100% / 7);
-}
-
-.calendar ul.days li:before {
-  content: '';
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  transition: 350ms;
-  background-color: var(--available);
-  z-index: -1;
-}
-
-.calendar ul.days li:hover:before {
-  background-color: var(--available-hover);
-}
-
-.calendar ul.days li.selected_between:before {
-  background-color: var(--selected-between);
-}
-
-.calendar ul.days li.selected_between:hover:before {
-  background-color: var(--selected-between);
-}
-
-.calendar ul.days li.booked:before {
-  background-color: var(--booked);
-}
-
-.calendar ul.days li.booked:hover:before {
-  background-color: var(--booked);
+.booking_sec article {
+  margin-inline: 0;
 }
 
 .booking_form_art {
@@ -269,7 +158,8 @@ nav ul li a:hover:before {
   flex-direction: column;
   align-items: center;
   gap: 2.5em;
-  padding: 3em;
+  max-width: min-content;
+  padding: 3em 4em;
   border-radius: 20px;
   background-color: var(--white);
 }
@@ -311,7 +201,7 @@ nav ul li a:hover:before {
 .booking_form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   width: 100%;
 }
 
