@@ -420,12 +420,6 @@ nav ul li a:hover:before {
   }
 }
 
-.hero_sec {
-  gap: 1em;
-  left: 10%;
-  z-index: 1;
-}
-
 .heroes {
   position: absolute;
   display: flex;

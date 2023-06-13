@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/250fd47c9a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="/public/css/global.css">
   <link rel="stylesheet" href="/public/css/main.css">
-  <link rel="stylesheet" href="/public/css/reviews.css">
   <link rel="stylesheet" href="/public/css/location.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="/public/css/services.css">
+  <link rel="stylesheet" href="/public/css/reviews.css">
   <title>Welcome - Monte Verde in Funchal</title>
 </head>
 
@@ -53,47 +54,47 @@
           <a href="#booking">Contact</a>
         </div>
       </div>
+
+      <section class="hero_sec">
+        <article class="hero_titles">
+          <h1>Welcome to Monte Verde in Funchal</h1>
+          <p>
+            Surrounded by gardens, this guest house offers an outdoor pool with 
+            sun deck and a conservatory restaurant overlooking the surrounding vegetation.
+          </p>
+          <button class="hero_btn primar_btn">
+            <a href="#booking">Book now</a>
+          </button>
+        </article>
+        <article class="hero_gall">
+          <article class="landscape_img">
+            <a href="gallery.html">
+              <img src="https://img.bedsandhotels.com/media/pic-monteverde-3.jpg" alt="">
+            </a>
+          </article>
+          <div class="hero_row">
+            <article class="rect_img">
+              <a href="gallery.html">
+                <img src="https://img.bedsandhotels.com/media/pic-monteverde-7.jpg" alt="">
+              </a>
+            </article>
+            <article class="rect_img">
+              <a href="gallery.html">
+                <img src="https://img.bedsandhotels.com/media/pic-monteverde-6.jpg" alt="">
+              </a>
+            </article>
+          </article>
+        </section>
+        
+        <a href="#location" class="scroll-down">
+          <div id="scroll_btn"></div>
+        </a>
       
     </header>
-    
-  </div>
-  
-  <section class="hero_sec">
-    <article class="hero_titles">
-      <h1>Welcome to Monte Verde in Funchal</h1>
-      <p>
-        Surrounded by gardens, this guest house offers an outdoor pool with 
-        sun deck and a conservatory restaurant overlooking the surrounding vegetation.
-      </p>
-      <button class="hero_btn primar_btn">
-        <a href="#booking">Book now</a>
-      </button>
-    </article>
-    <article class="hero_gall">
-      <article class="landscape_img">
-        <a href="gallery.html">
-          <img src="https://img.bedsandhotels.com/media/pic-monteverde-3.jpg" alt="">
-        </a>
-      </article>
-      <div class="hero_row">
-        <article class="rect_img">
-          <a href="gallery.html">
-            <img src="https://img.bedsandhotels.com/media/pic-monteverde-7.jpg" alt="">
-          </a>
-        </article>
-        <article class="rect_img">
-          <a href="gallery.html">
-            <img src="https://img.bedsandhotels.com/media/pic-monteverde-6.jpg" alt="">
-          </a>
-        </article>
-      </article>
-    </section>
-    
-    <a href="#services" class="scroll-down">
-      <div id="scroll_btn"></div>
-    </a>
   </div>
       
+  <div class="scroll_view">
+    
     <main>
       
       <section id="location">
@@ -302,71 +303,44 @@
         </div>
       </div>
       
-    </section>
-    
-    <section id="booking" class="contact_sec col bg_image">
-      <div class="header_overlay"></div>
-      
-      <article class="section_head">
-        <h1>Appointment booking</h1>
-      </article>
-      <section class="booking_sec p-0">
-        <article class="calendar_art">
-          <div class="calendar_header">
-            <p class="current_date"></p>
-            <div class="icons">
-              <i data-icon="previous" class="fa-solid fa-angle-left"></i>
-              <i data-icon="next" class="fa-solid fa-angle-right"></i>
-            </div>
-          </div>
-          
-          <div class="calendar">
-            <ul class="weeks">
-              <li>Sun</li>
-              <li>Mon</li>
-              <li>Tue</li>
-              <li>Wed</li>
-              <li>Thu</li>
-              <li>Fri</li>
-              <li>Sat</li>
-            </ul>
-            <ul class="days">
-            </ul>
-          </div>
-        </article>
-        <article class="booking_form_art">
-          <div class="calendar_colors_info">
-            <div class="color_info_row">
-              <div id="available" class="defined_color"></div>
-              <p>Available</p>
-            </div>
-            <div class="color_info_row">
-              <div id="booked" class="defined_color"></div>
-              <p>Booked</p>
-            </div>
-            <div class="color_info_row">
-              <div id="changeover" class="defined_color"></div>
-              <p>Changeover</p>
-            </div>
-          </div>
-          
-          <form class="booking_form" action="" method="POST">
-            <input type="text" name="name" id="name" placeholder="Your full name" class="data_input" required>
-            <input type="email" name="email" id="email" placeholder="Your @email" class="data_input" required>
-            <input type="text" name="phone" id="phone" placeholder="Your phone number" class="data_input" required>
-            <input type="text" name="date" id="date" placeholder="Select a date in the calendar" class="data_input" required>
-            <div class="checkbox_row">
-              <input type="checkbox" name="checkbox" id="checkbox">
-              <label for="checkbox">I agree to the processing of <a href="#booking">personal data</a></label>
-            </div>
-            <input type="submit" name="submit" id="submit" value="Contact Host" class="data_input">
-            <input type="hidden" name="action" id="action" value="Contact Host">
-          </form>
-        </article>
       </section>
-    </section>
-    
-    <section id="reviewsId" class="reviews">
+
+      <section id="services" class="facilities_services">
+        <div>
+          <article class="section_head">
+            <h1>Facilities and our services</h1>
+            <p>Surrounded by gardens, this guest house offers an outdoor pool with sun deck and a conservatory restaurant overlooking the surrounding vegetation.</p>
+          </article>
+        </div>
+        <div class="service">
+        <article>
+          <img style="width: 100px;" src="/public/img/hotel.png" alt="">
+          <div>
+          <h3>Swimming pool</h3>
+          <h3>Garden</h3>
+          <h3>Bar</h3>
+          </div>
+        </article>
+        <article>
+          <img style="width: 100px;" src="/public/img/receptionist.png" alt="">
+          <div>
+          <h3>24/7 front desk</h3>
+          <h3>Free parking</h3>
+          <h3>Free Wi-Fi</h3>
+          </div>
+        </article>
+        <article>
+          <img style="width: 100px;" src="/public/img/massage.png" alt="">
+          <div>
+          <h3>Full body massage</h3>
+          <h3>Back massage</h3>
+          <h3>Foot massage</h3>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
       
       <article class="section_head reviewNadpis">
         <h1>Reviews</h1>
@@ -471,10 +445,61 @@
         <a class="moreReviews" href="">More reviews</a>
         
       </section>
+    
+      <section id="booking" class="contact_sec col bg_image">
+        <div class="header_overlay"></div>
+
+        <article class="section_head">
+          <h1>Appointment booking</h1>
+        </article>
+        <section class="booking_sec p-0">
+          <article class="booking_form_art">
+        
+            <form class="booking_form" action="" method="POST">
+              <input type="text" name="name" id="name" placeholder="Your full name" class="data_input" required>
+              <input type="email" name="email" id="email" placeholder="Your @email" class="data_input" required>
+              <input type="text" name="phone" id="phone" placeholder="Your phone number" class="data_input" required>
+              <input type="text" name="date" id="date" placeholder="Select a date in the calendar" class="data_input" required>
+              <input type="submit" name="submit" id="submit" value="Contact Host" class="data_input">
+              <input type="hidden" name="action" id="action" value="Contact Host">
+            </form>
+
+          </article>
+        </section>
+      </section>
+
     </main>
+
+    <footer>
+      <article class="footer_art">
+        <div class="logo">
+          <img src="/public/img/monte_verde_logo.svg" alt="Monte verde">
+        </div>
+        <ul class="footer_links footer_list">
+          <li>
+            <i class="fa-light fa-envelope"></i>
+            <a href="">E-mail</a>
+          </li>
+          <li>
+            <i class="fa-light fa-phone"></i>
+            <a href="">Phone number</a>
+          </li>
+        </ul>
+        <div class="website_info">
+          <ul class="footer_info footer_list">
+            <li>Copyright © 2023 Grandview. All rights reserved.</li>
+            <li>
+              <i class="fa-light fa fa-long-arrow-up"></i>
+              <a href="#home">Back on top</a>
+              <i class="fa-light fa fa-long-arrow-up"></i>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </footer>
+  </div>
       
   <script src="/public/js/app.js"></script>
-  <script src="/public/js/calendar.js"></script>
   
 </body>
 
