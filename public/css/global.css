@@ -95,6 +95,10 @@ section {
   padding: 0;
 }
 
+.section_head p {
+  margin-top: 2em;
+}
+
 article {
   display: flex;
   flex-direction: column;
