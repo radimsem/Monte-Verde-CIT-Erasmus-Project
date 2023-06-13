@@ -32,6 +32,13 @@
   --changeover: #fee2a0;
   --transition-short: .35s;
   --transition-long: .65s;
+  --rectangle-height: calc(var(--button-width) * .1);
+  --button-width: 30px;
+  --button-height: calc(var(--button-width) * .8);
+  --rectangle-height: calc(var(--button-width) * .1);
+  --translate: calc(var(--button-width) * .17);
+  --transition-short: .35s;
+  --transition-long: .65s;
 }
 
 html, body {
