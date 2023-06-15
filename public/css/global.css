@@ -200,3 +200,9 @@ article {
   bottom: 0;
   background-color: var(--pink);
 }
+
+@media (max-width: 900px) {
+  section {
+    padding-inline: 5%;
+  }
+}

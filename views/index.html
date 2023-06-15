@@ -109,7 +109,13 @@
           </div>
           <div>
             <article class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4444.156489253063!2d-16.93137375255032!3d32.64202971085157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc605ff10b8d03a1%3A0x4f604943496900a5!2sEstalagem%20Monte%20Verde%20Lda!5e0!3m2!1scs!2spt!4v1686652147615!5m2!1scs!2spt" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4444.156489253063!2d-16.93137375255032!3d32.64202971085157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc605ff10b8d03a1%3A0x4f604943496900a5!2sEstalagem%20Monte%20Verde%20Lda!5e0!3m2!1scs!2spt!4v1686652147615!5m2!1scs!2spt" 
+                      width="100%" 
+                      height="400" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy">
+              </iframe>
             </article>
           </div>
         </div>
@@ -357,7 +363,7 @@
           <h1>Reviews</h1>
         </article>
 
-        <section class="review_child_sec p-0 wrap">
+        <section class="reviews_child_sec p-0 wrap">
           <article class="reviewItem">
             <div class="menHvez">
               <div class="profileImg">
@@ -461,13 +467,34 @@
               </p>
               <p>April 27, 2023</p>
             </div>
-          </article> 
+          </article>
+
+          <article class="reviewItem">
+            <div class="menHvez">
+              <div class="profileImg">
+                <div class="circle">
+                  <span class="letter">A</span>
+                </div>
+                <p class="jmeno">Amanda Johnson</p>
+              </div>
+              <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="review_part">
+              <p class="review">
+                "My stay at Monte Verde was a fantastic experience! 
+                From the moment I walked in, the staff at the reception 
+                greeted me with warm smiles and made me feel truly welcome."
+              </p>
+              <p>April 27, 2023</p>
+            </div>
+          </article>
         </section>
-
-        <button class="more_reviews_btn primar_btn">
-          <a href="#more-reviews">More reviews</a>
-        </button>
-
       </section>
     
       <section id="booking" class="contact_sec col bg_image">
@@ -524,6 +551,7 @@
   </div>
       
   <script src="/public/js/app.js"></script>
+  <script src="/public/js/reviews.js"></script>
   
 </body>
 
