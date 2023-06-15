@@ -1,7 +1,6 @@
 .reviewItem {
     gap: 1.5em;
     padding: 2.5em;
-    min-width: 500px;
     border-radius: 20px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.15);
 }
@@ -117,6 +116,23 @@
     .reviewItem {
         min-width: min-content;
     }
+    .menHvez {
+        flex-direction: column;
+        align-items: normal;
+    }
 }
-
-  
+@media (min-width:850px) {
+    .reviewItem {
+        min-width: 300px;
+    }
+}
+@media (min-width:1020px) {
+    .reviewItem {
+        min-width: 350px;
+    }
+}
+@media (min-width:1350px) {
+    .reviewItem {
+        min-width: 500px;
+    }
+}
