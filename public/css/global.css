@@ -200,3 +200,12 @@ article {
   bottom: 0;
   background-color: var(--pink);
 }
+@media(max-width:350px){
+  section {
+    padding: 0.5em 10px;
+  }
+  article{
+    margin: 10px 0px;
+    padding: 20px 10px;
+  }
+}

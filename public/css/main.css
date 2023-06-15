@@ -343,18 +343,6 @@
   z-index: 2;
 }
 
-@media (max-width: 867px) {
-  .hero_sec {
-    left: 5%;
-  }
-}
-
-@media (max-width: 1167px) {
-  .hero_sec {
-    left: 5%;
-  }
-}
-
 .heroes {
   position: absolute;
   display: flex;
