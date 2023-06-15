@@ -1,0 +1,25 @@
+.gallery_mini_nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    left: 11.5%;
+    top: 125px;
+}
+.gallery_mini_nav p, .gallery_mini_nav a {
+    color: var(--white);
+}
+.bg_image {
+    height: 185px
+}
+.gallery_img {
+    display: flex;
+    flex-direction: row;
+}
+.gallery_img div {
+    margin: 1em;
+}
+#gallery {
+    display: flex;
+    flex-direction: column;
+}

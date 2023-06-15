@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="/public/css/global.css">
     <link rel="stylesheet" href="/public/css/main.css">
     <link rel="stylesheet" href="/public/css/services.css">
+    <link rel="stylesheet" href="/public/css/gallery.css">
     <title>Welcome - Monte Verde in Funchal</title>
 </head>
 
 <body>
-    <div id="home" class="showcase relative case_size bg_image">
+    <div id="home" class="showcase relative bg_image">
         <div class="header_overlay case_size"></div>
         
-        <header class="relative case_size">
+        <header class="relative">
             <div class="header_top">
                 <div class="logo">
                     <img src="/public/img/monte_verde_logo.svg" alt="Monte Verde Logo">
@@ -26,7 +27,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="gallery.html">Overview</a></li>
+                        <li><a href="gallery.html#gallery">Overview</a></li>
                         <li><a href="index.html#location">Location</a></li>
                         <li><a href="index.html#services">Services</a></li>
                         <li><a href="index.html#reviews">Reviews</a></li>
@@ -45,7 +46,7 @@
             <div class="mobile-navigation">
                 <div class="mobile-navbar">
                     <a href="index.html">Home</a>
-                    <a href="gallery.html">Overview</a>
+                    <a href="gallery.html#gallery">Overview</a>
                     <a href="index.html#location">Location</a>
                     <a href="index.html#services">Services</a>
                     <a href="index.html#reviews">Reviews</a>
@@ -53,77 +54,102 @@
                 </div>
             </div>
             
-            <section class="hero_sec">
-                <article class="hero_titles">
-                    <h1>Welcome to Monte Verde in Funchal</h1>
-                    <p>
-                        Surrounded by gardens, this guest house offers an outdoor pool with 
-                        sun deck and a conservatory restaurant overlooking the surrounding vegetation.
-                    </p>
-                    <button class="hero_btn primar_btn">
-                        <a href="#booking">Book now</a>
-                    </button>
-                </article>
-                <article class="hero_gall">
-                    <article class="landscape_img">
-                        <a href="gallery.html">
-                            <img src="https://img.bedsandhotels.com/media/pic-monteverde-3.jpg" alt="">
-                        </a>
-                    </article>
-                    <div class="hero_row">
-                        <article class="rect_img">
-                            <a href="gallery.html">
-                                <img src="/public/img/hero_gall_rect_1.jpeg" alt="">
-                            </a>
-                        </article>
-                        <article class="rect_img">
-                            <a href="gallery.html">
-                                <img src="/public/img/hero_gall_rect_2.jpeg" alt="">
-                            </a>
-                        </article>
-                    </article>
-                </section>
-                
-                <a href="#location" class="scroll-down">
-                    <div id="scroll_btn"></div>
-                </a>
-                
-            </header>
-        </div>
+            <div class="gallery_mini_nav">
+                <a href="index.html">Home</a>
+                <i class="fa-light fa-angle-right" style="color: #ff7676;"></i>
+                <p>Overview</p>
+            </div>
+            
+        </header>
+    </div>
         
-        <div class="scroll_view">
-            
-            
-            <footer>
-                <article class="footer_art">
-                    <div class="logo">
-                        <img src="/public/img/monte_verde_logo.svg" alt="Monte verde">
-                    </div>
-                    <ul class="footer_links footer_list">
+    <main>
+        <section id="gallery">
+            <article class="section_head">
+                <h1>All photos</h1>
+            </article>
+            <div class="gallery_img">
+                <div>
+                    <img src="/public/img/gallery_8.jpeg" alt="couch at the lobby">
+                    <p>Couch at the lobby</p>
+                </div>
+                <div>
+                    <img src="/public/img/gallery_2.jpeg" alt="bedroom">
+                    <p>Bedroom</p>
+                </div>
+            </div>
+            <div class="gallery_img">
+                <div>
+                    <img src="/public/img/gallery_3.jpeg" alt="view from the hotel">
+                    <p>View from the hotel</p>
+                </div>
+                <div>
+                    <img src="/public/img/gallery_4.jpeg" alt="hotel restaurant">
+                    <p>Hotel restaurant</p>
+                </div>
+            </div>
+            <div class="gallery_img">
+                <div>
+                    <img src="/public/img/gallery_5.jpeg" alt="reception">
+                    <p>Reception</p>
+                </div>
+                <div>
+                    <img src="/public/img/gallery_6.jpeg" alt="pool">
+                    <p>Pool</p>
+                </div>
+            </div>
+            <div class="gallery_img">
+                <div>
+                    <img src="/public/img/gallery_7.jpeg" alt="alley between the hotel buildings">
+                    <p>Alley between the hotel buildings</p>
+                </div>
+                <div>
+                    <img src="/public/img/gallery_1.jpeg" alt="seats in the first floor">
+                    <p>Seats in the first floor</p>
+                </div>
+            </div>
+            <div class="gallery_img">
+                <div>
+                    <img src="/public/img/gallery_9.jpeg" alt="hotel room">
+                    <p>Hotel room</p>
+                </div>
+                <div>
+                    <img src="/public/img/gallery_10.jpeg" alt="play area">
+                    <p>Play area</p>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+        <footer>
+            <article class="footer_art">
+                <div class="logo">
+                    <img src="/public/img/monte_verde_logo.svg" alt="Monte verde">
+                </div>
+                <ul class="footer_links footer_list">
+                    <li>
+                        <i class="fa-light fa-envelope"></i>
+                        <a href="">E-mail</a>
+                    </li>
+                    <li>
+                        <i class="fa-light fa-phone"></i>
+                        <a href="">Phone number</a>
+                    </li>
+                </ul>
+                <div class="website_info">
+                    <ul class="footer_info footer_list">
+                        <li>Copyright © 2023 Monte Verde in Funchal. All rights reserved.</li>
                         <li>
-                            <i class="fa-light fa-envelope"></i>
-                            <a href="">E-mail</a>
-                        </li>
-                        <li>
-                            <i class="fa-light fa-phone"></i>
-                            <a href="">Phone number</a>
+                            <i class="fa-light fa fa-long-arrow-up"></i>
+                            <a href="#home">Back on top</a>
+                            <i class="fa-light fa fa-long-arrow-up"></i>
                         </li>
                     </ul>
-                    <div class="website_info">
-                        <ul class="footer_info footer_list">
-                            <li>Copyright © 2023 Monte Verde in Funchal. All rights reserved.</li>
-                            <li>
-                                <i class="fa-light fa fa-long-arrow-up"></i>
-                                <a href="#home">Back on top</a>
-                                <i class="fa-light fa fa-long-arrow-up"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </footer>
-        </div>
-        
-        <script src="/public/js/app.js"></script>
-        
-    </body>
-    </html>
+                </div>
+            </article>
+        </footer>
+    
+    <script src="/public/js/app.js"></script>
+    
+</body>
+</html>
