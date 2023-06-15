@@ -13,9 +13,16 @@
     display: flex;
     flex-direction: column;
 }
+.location_heading_art {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 .location_div_h2 {
     display: flex;
     flex-direction: row;
+}
+.location_info_art {
+    gap: 15px;
 }
 .row_between {
     display: flex;
@@ -31,6 +38,7 @@
 }
 .location_div_h2 span {
     margin-right: 15px;
+    color: var(--pink);
 }
 #location p {
     word-wrap: normal;

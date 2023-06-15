@@ -4,30 +4,30 @@
     flex-direction: column;
     cursor: default;
 }
+
 .service{
     display: flex;
     flex-direction: row;
 }
+
 .service article{
     text-align: center;
     align-items: center;
-    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.114);
-    border-radius: 20px;
-    transition: 0.5s;
+    gap: 20px;
+    min-width: 300px;
 }
+
+.service i {
+  font-size: 2.5em;
+  color: var(--pink);
+}
+
 @media(max-width:950px){
     .service{
         flex-direction: column;
     }
 }
-@media(min-width:950px){
-    .service article:hover{
-        transition: 0.5s;
-        margin-top: -0.5em;
-        margin-bottom:  1.5em;
-        transform: scale(1.03);
-    }
-}
+
 /*footer*/
 footer {
     display: flex;

@@ -29,9 +29,9 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="gallery.html">Overview</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#location">Location</a></li>
-            <li><a href="#reviewsId">Reviews</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#booking">Contact</a></li>
           </ul>
         </nav>
@@ -48,9 +48,9 @@
         <div class="mobile-navbar">
           <a href="#home">Home</a>
           <a href="gallery.html">Overview</a>
-          <a href="#services">Services</a>
           <a href="#location">Location</a>
-          <a href="#reviewsId">Reviews</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
           <a href="#booking">Contact</a>
         </div>
       </div>
@@ -75,12 +75,12 @@
           <div class="hero_row">
             <article class="rect_img">
               <a href="gallery.html">
-                <img src="https://img.bedsandhotels.com/media/pic-monteverde-7.jpg" alt="">
+                <img src="/public/img/hero_gall_rect_1.jpeg" alt="">
               </a>
             </article>
             <article class="rect_img">
               <a href="gallery.html">
-                <img src="https://img.bedsandhotels.com/media/pic-monteverde-6.jpg" alt="">
+                <img src="/public/img/hero_gall_rect_2.jpeg" alt="">
               </a>
             </article>
           </article>
@@ -115,13 +115,13 @@
         </div>
         <div class="area_div">
           <div>
-            <article>
+            <article class="location_heading_art">
               <div class="location_div_h2"><span class="material-symbols-outlined">
                 directions_walk
               </span><h2>What's nearby</h2>
             </div>
           </article>
-          <article>
+          <article class="location_info_art">
             <div class="row_between">
               <p>Rotunda Comendador Paulo Martinho Martins
               </p>
@@ -175,14 +175,14 @@
           </article>
         </div>
         <div>
-          <article>
+          <article class="location_heading_art">
             <div class="location_div_h2">
               <span class="material-symbols-outlined">
                 restaurant
               </span><h2>Restaurants & cafes</h2>
             </div>
           </article>
-          <article>
+          <article class="location_info_art">
             <div class="row_between">
               <div class="restaurant_row">
                 <p class="type">Cafe/bar</p>
@@ -205,14 +205,14 @@
               <p>200&nbsp;m</p>
             </div>
           </article>
-          <article>
+          <article class="location_heading_art">
             <div class="location_div_h2">
               <span class="material-symbols-outlined">
                 beach_access
                 </span><h2>Nearby beaches<h2>
             </div>
           </article>
-          <article>
+          <article class="location_info_art">
             <div class="row_between">
               <p>Gorgulho - Gavinas Beach
               </p>
@@ -241,14 +241,14 @@
           </article>
         </div>
         <div>
-          <article>
+          <article class="location_heading_art">
             <div class="location_div_h2">
               <span class="material-symbols-outlined">
                 attractions
               </span><h2>Top attractions</h2>
             </div>
           </article>
-          <article>
+          <article class="location_info_art">
             <div class="row_between">
               <p>Funchal's Museum of Natural History
               </p>
@@ -312,43 +312,53 @@
             <p>Surrounded by gardens, this guest house offers an outdoor pool with sun deck and a conservatory restaurant overlooking the surrounding vegetation.</p>
           </article>
         </div>
-        <div class="service">
-        <article>
-          <img style="width: 100px;" src="/public/img/hotel.png" alt="">
-          <div>
-          <h3>Swimming pool</h3>
-          <h3>Garden</h3>
-          <h3>Bar</h3>
-          </div>
-        </article>
-        <article>
-          <img style="width: 100px;" src="/public/img/receptionist.png" alt="">
-          <div>
-          <h3>24/7 front desk</h3>
-          <h3>Free parking</h3>
-          <h3>Free Wi-Fi</h3>
-          </div>
-        </article>
-        <article>
-          <img style="width: 100px;" src="/public/img/massage.png" alt="">
-          <div>
-          <h3>Full body massage</h3>
-          <h3>Back massage</h3>
-          <h3>Foot massage</h3>
-          </div>
-        </article>
-        </div>
+        <section class="service p-0 wrap">
+          <article>
+            <i class="fa-light fa-booth-curtain"></i>
+            <div>
+              <h3>Room service</h3>
+            </div>
+          </article>
+          <article>
+            <i class="fa-light fa-water-ladder"></i>
+            <div>
+              <h3>Swimming pool</h3>
+            </div>
+          </article>
+          <article>
+            <i class="fa-light fa-circle-parking"></i>
+            <div>
+              <h3>Free parking</h3>
+            </div>
+          </article>
+          <article>
+            <i class="fa-sharp fa-light fa-bowl-food"></i>
+            <div>
+              <h3>Breakfast</h3>
+            </div>
+          </article>
+          <article>
+            <i class="fa-light fa-martini-glass-citrus"></i>
+            <div>
+              <h3>Bar</h3>
+            </div>
+          </article>
+          <article>
+            <i class="fa-light fa-wifi"></i>
+            <div>
+              <h3>Free Wifi</h3>
+            </div>
+          </article>
+        </section>
       </section>
 
-      <section id="reviews" class="reviews">
-      
-      <article class="section_head reviewNadpis">
-        <h1>Reviews</h1>
-      </article>
-      <div class="reviewSection">
-        <div class="row">
-          
-          <div class="reviewItem">
+      <section id="reviews" class="reviews_parent_sec col">
+        <article class="section_head reviewNadpis">
+          <h1>Reviews</h1>
+        </article>
+
+        <section class="review_child_sec p-0 wrap">
+          <article class="reviewItem">
             <div class="menHvez">
               <div class="profileImg">
                 <div class="circle">
@@ -361,17 +371,20 @@
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
-                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-regular fa-star"></i></li>
               </ul>
             </div>
-            <article>
-              <p class="review">Check in possible even in 3 oclock in the night Calm location Nice personnel</p>
-              <p>Jan 01, 2023</p>
-            </article>
-          </div>
+            <div class="review_part">
+              <p class="review">
+                "Check in possible even in 3 oclock in the night 
+                Calm location Nice personnel."
+              </p>
+              <p>June 10, 2023</p>
+            </div>
+          </article>
           
-          <div class="reviewItem">
+          <article class="reviewItem">
             <div class="menHvez">
               <div class="profileImg">
                 <div class="circle">
@@ -384,19 +397,19 @@
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
-                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
               </ul>
             </div>
-            <article>
-              <p class="review">It was extremely clean:) Staff was nice and helpful. We recommend this place to everyone.</p>
-              <p>Jan 01, 2023</p>
-            </article>
-          </div>
-          
-        </div>
-        <div class="row">
-          
-          <div class="reviewItem">
+            <div class="review_part">
+              <p class="review">
+                "It was extremely clean. :) Staff was nice and helpful. 
+                We recommend this place to everyone."
+              </p>
+              <p>May 29, 2023</p>
+            </d>
+          </article>
+                    
+          <article class="reviewItem">
             <div class="menHvez">
               <div class="profileImg">
                 <div class="circle">
@@ -412,13 +425,19 @@
                 <li><i class="fa-regular fa-star"></i></li>
               </ul>
             </div>
-            <article>
-              <p class="review">Staff are very friendly; breakfasts are good and ample, with help-yourself coffee; lounges are nicely appointed; there's a pool; free WiFi. Rooms with sea view are pretty, although the common dining room and balcony also have views. The hotel is very good value for its rates. English spoken</p>
-              <p>Jan 01, 2023</p>
-            </article>
-          </div>
+            <div class="review_part">
+              <p class="review">
+                "Staff are very friendly; breakfasts are good and ample, 
+                with help-yourself coffee; lounges are nicely appointed; 
+                there's a pool; free WiFi. Rooms with sea view are pretty, 
+                although the common dining room and balcony also have views. 
+                The hotel is very good value for its rates. English spoken."
+              </p>
+              <p>May 8, 2023</p>
+            </div>
+          </article>
           
-          <div class="reviewItem">
+          <article class="reviewItem">
             <div class="menHvez">
               <div class="profileImg">
                 <div class="circle">
@@ -431,19 +450,24 @@
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
                 <li><i class="fa-solid fa-star"></i></li>
-                <li><i class="fa-regular fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
               </ul>
             </div>
-            <article>
-              <p class="review">My stay at Monte Verde was a fantastic experience! From the moment I walked in, the staff at the reception greeted me with warm smiles and made me feel truly welcome.</p>
-              <p>Jan 01, 2023</p>
-            </article>
-          </div>
-          
-        </div>
-        
-        <a class="moreReviews" href="">More reviews</a>
-        
+            <div class="review_part">
+              <p class="review">
+                "My stay at Monte Verde was a fantastic experience! 
+                From the moment I walked in, the staff at the reception 
+                greeted me with warm smiles and made me feel truly welcome."
+              </p>
+              <p>April 27, 2023</p>
+            </div>
+          </article> 
+        </section>
+
+        <button class="more_reviews_btn primar_btn">
+          <a href="#more-reviews">More reviews</a>
+        </button>
+
       </section>
     
       <section id="booking" class="contact_sec col bg_image">
@@ -487,7 +511,7 @@
         </ul>
         <div class="website_info">
           <ul class="footer_info footer_list">
-            <li>Copyright © 2023 Grandview. All rights reserved.</li>
+            <li>Copyright © 2023 Monte Verde in Funchal. All rights reserved.</li>
             <li>
               <i class="fa-light fa fa-long-arrow-up"></i>
               <a href="#home">Back on top</a>

@@ -1,59 +1,3 @@
-.header_overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.65;
-  background-color: #000;
-}
-
-.header_top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: var(--transition-short);
-}
-
-.header_top:hover {
-  background-color: var(--black);
-}
-
-.logo img {
-  width: 250px;
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-
-nav ul li a {
-  position: relative;
-  padding-block: 1em;
-  color: var(--white);
-}
-
-nav ul li a:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  background-color: var(--white);
-  transition: var(--transition-short);
-}
-
-nav ul li a:hover:before {
-  width: 100%;
-  opacity: 1;
-}
-
 .hero_sec {
   position: absolute;
   align-items: center;
@@ -72,6 +16,10 @@ nav ul li a:hover:before {
 .hero_titles p {
   margin-bottom: 20px;
   color: var(--smoke);
+}
+
+.hero_btn a:hover {
+  color: var(--white);
 }
 
 .hero_gall article {
@@ -240,7 +188,7 @@ nav ul li a:hover:before {
 .booking_form #submit {
   cursor: pointer;
   color: var(--white);
-  border: 3px solid var(--pink);
+  border: 2px solid var(--pink);
   border-radius: 50px;
   background-color: var(--pink);
   transition: var(--transition-short);
@@ -272,19 +220,6 @@ nav ul li a:hover:before {
 
 .primar_btn {
   display: flex;
-}
-
-.primar_btn a {
-  font-size: 1.15em;
-  padding: 1em 1.5em;
-  color: var(--white);
-  border: 2px solid var(--pink);
-  border-radius: 50px;
-  transition: var(--transition-short);
-}
-
-.primar_btn a:hover {
-  background-color: var(--pink);
 }
 
 .scroll-down #scroll_btn:before {
