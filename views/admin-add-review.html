@@ -87,26 +87,25 @@
             
             <form action="/admin/reviews" method="post" class="edit_form" enctype="multipart/form-data">
               <div class="form_group">
-                <label for="review_title">Review title</label>
-                <input
-                  type="text"
-                  name="review_title"
-                  id="review_title"
-                  placeholder="Write heading for the review"
-                  required
-                />
-              </div>
-              <div class="form_group">
                 <label for="review_content">Review content</label>
                 <textarea name="review_content" id="review_content" cols="30" rows="10" placeholder="Write content of the review" required></textarea>
               </div>
               <div class="form_group">
-                <label for="author">Author name</label>
+                <label for="author_name">Author name</label>
                 <input
                   type="text"
-                  name="author"
-                  id="author"
+                  name="author_name"
+                  id="author_name"
                   placeholder="Write the full name of the author of the review"
+                  required
+                />
+              </div>
+              <div class="form_group">
+                <label for="author_img">Author photo</label>
+                <input
+                  type="file"
+                  name="author_img"
+                  id="author_img"
                   required
                 />
               </div>

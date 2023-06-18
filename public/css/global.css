@@ -101,39 +101,6 @@ img {
   background-color: var(--black);
 }
 
-.logo img {
-  width: 250px;
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-}
-
-nav ul li a {
-  position: relative;
-  padding-block: 1em;
-  color: var(--white);
-}
-
-nav ul li a:before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  background-color: var(--white);
-  transition: var(--transition-short);
-}
-
-nav ul li a:hover:before {
-  width: 100%;
-  opacity: 1;
-}
-
 section {
   position: relative;
   display: flex;

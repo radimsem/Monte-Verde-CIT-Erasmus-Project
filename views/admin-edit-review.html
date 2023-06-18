@@ -87,30 +87,27 @@
             
             <form action="/admin/reviews" method="post" class="edit_form" enctype="multipart/form-data">
               <div class="form_group">
-                <label for="review_title">Review title</label>
+                <label for="review_content">Review content</label>
+                <textarea name="review_content" id="review_content" cols="30" rows="10" placeholder="Write content of the review" required>
+"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe aliquid dolorem non, natus nostrum ut iste consequatur consequuntur eos voluptatum esse vero obcaecati voluptatem ullam fugiat modi. Accusamus, corporis minus."</textarea>
+              </div>
+              <div class="form_group">
+                <label for="author_name">Author name</label>
                 <input
                   type="text"
-                  value="Beautiful View"
-                  name="review_title"
-                  id="review_title"
-                  placeholder="Write heading for the review"
+                  name="author_name"
+                  id="author_name"
+                  value="Kelly Myer"
+                  placeholder="Write the full name of the author of the review"
                   required
                 />
               </div>
               <div class="form_group">
-                <label for="review_content">Review content</label>
-                <textarea name="review_content" id="review_content" cols="30" rows="10" placeholder="Write content of the review" required>
-My husband, 2 teenagers, and I had a wonderful stay with beautiful views, games, and all the comforters of home. Definitely recommend!</textarea
-                >
-              </div>
-              <div class="form_group">
-                <label for="author">Author name</label>
+                <label for="author_img">Author photo</label>
                 <input
-                  type="text"
-                  value="Kelly Myer"
-                  name="author"
-                  id="author"
-                  placeholder="Write the full name of the author of the review"
+                  type="file"
+                  name="author_img"
+                  id="author_img"
                   required
                 />
               </div>
@@ -129,16 +126,15 @@ My husband, 2 teenagers, and I had a wonderful stay with beautiful views, games,
                 <label for="stay_info">Stay info</label>
                 <input
                   type="text"
-                  value="Stayed 3 nights in Apr 2023"
                   name="stay_info"
                   id="stay_info"
+                  value="May 29, 2023"
                   placeholder="Write information about client's stay in the reservation (number of days + period)"
                   required
                 />
               </div>
-              <input type="submit" id="submit" value="Update review on the website" />
-              <input type="hidden" name="action" id="action" value="update_review" />
-              <input type="hidden" name="id" value="<%= review.id %>" />
+              <input type="submit" id="submit" value="Edit review on the website" />
+              <input type="hidden" name="action" id="action" value="edit_review" />
             </form>
 
           </article>

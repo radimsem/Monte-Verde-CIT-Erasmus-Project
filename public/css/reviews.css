@@ -31,21 +31,11 @@
     color: var(--pink);
 }
 
-.circle {
-    width: 40px;
-    height: 40px;
+.profileImg img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-  
-.letter {
-    font-size: 24px;
-    color: #fff;
-}
-
   
 .profileImg {
     display: flex;
@@ -57,11 +47,6 @@
 
 .jmeno{
     margin-left: 5px;
-}
-
-.profileImg img {
-    width: 40px;
-    border-radius: 50%;
 }
 
 .review_part {
